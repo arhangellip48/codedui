@@ -159,7 +159,7 @@
             Mouse.Click(uIЖурналыButton, new Point(27, 12));
 
             // Перемещение  "Splitter Bar" кнопка в "Система прав" кнопка
-            
+
             uISplitterBarButton.EnsureClickable(new Point(uISplitterBarButton.Left, uISplitterBarButton.Top));
             Mouse.StartDragging(null, new Point(116, 185));//,  MouseButtons.Left);
             //Mouse.StartDragging(null, new Point(103, 300));
@@ -181,6 +181,37 @@
         }
 
         private startParams mstartParams;
+
+        /// <summary>
+        /// AssertMethod1 - Используйте "AssertMethod1ExpectedValues" для передачи параметров в этот метод.
+        /// </summary>
+        public void AssertMethod1()
+        {
+            #region Variable Declarations
+            WinCell uIМоревРусланЕвгеньевиCell = this.UIКвазарЖурналфлюорогрWindow.UIЖурналфлюорографичесWindow.UI_registryGridClient.UIResultTableTable.UIResultTableстрока7Row.UIМоревРусланЕвгеньевиCell;
+            WinRow uIResultTableстрока7Row = this.UIКвазарЖурналфлюорогрWindow.UIЖурналфлюорографичесWindow.UI_registryGridClient.UIResultTableTable.UIResultTableстрока7Row;
+            #endregion
+
+            // Убедитесь, что свойство Value "Морев Руслан Евгеньевич" ячейка равняется "Морев Руслан Евгеньевич"
+            Assert.AreEqual(this.AssertMethod1ExpectedValues.UIМоревРусланЕвгеньевиCellValue, uIМоревРусланЕвгеньевиCell.Value, "нет морячка");
+
+            // Убедитесь, что свойство Name "ResultTable строка 7" строка равняется "ResultTable строка 7"
+            Assert.AreEqual(this.AssertMethod1ExpectedValues.UIResultTableстрока7RowName, uIResultTableстрока7Row.Name, "не все строки");
+        }
+
+        public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues
+        {
+            get
+            {
+                if ((this.mAssertMethod1ExpectedValues == null))
+                {
+                    this.mAssertMethod1ExpectedValues = new AssertMethod1ExpectedValues();
+                }
+                return this.mAssertMethod1ExpectedValues;
+            }
+        }
+
+        private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;
     }
     /// <summary>
     /// Параметры для передачи в "mtr"
@@ -295,6 +326,25 @@
         /// Тип "********" в "_password_EmbeddableTextBox" надпись
         /// </summary>
         public string UI_password_EmbeddableEditSendKeys = "mOL/lXDUSd/hy7K5BZnJEA==";
+        #endregion
+    }
+    /// <summary>
+    /// Параметры для передачи в "AssertMethod1"
+    /// </summary>
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class AssertMethod1ExpectedValues
+    {
+
+        #region Fields
+        /// <summary>
+        /// Убедитесь, что свойство Value "Морев Руслан Евгеньевич" ячейка равняется "Морев Руслан Евгеньевич"
+        /// </summary>
+        public string UIМоревРусланЕвгеньевиCellValue = "Морев Руслан Евгеньевич";
+
+        /// <summary>
+        /// Убедитесь, что свойство Name "ResultTable строка 7" строка равняется "ResultTable строка 7"
+        /// </summary>
+        public string UIResultTableстрока7RowName = "ResultTable строка 7";
         #endregion
     }
 }

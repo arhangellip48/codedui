@@ -34,6 +34,7 @@ namespace CodedUITestProject12
             this.UIMap.mtr();
             this.UIMap.RecordedMethod333();
             this.UIMap.AssertMethod1();
+            this.UIMap.CreatFlure();
 
         }
 

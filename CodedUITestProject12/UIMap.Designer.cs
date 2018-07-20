@@ -30,32 +30,149 @@ namespace CodedUITestProject12
     {
         
         /// <summary>
-        /// AssertMethod1 - Используйте "AssertMethod1ExpectedValues" для передачи параметров в этот метод.
+        /// CreatFlure - Используйте "CreatFlureParams" для передачи параметров в этот метод.
         /// </summary>
-        public void AssertMethod1()
+        public void CreatFlure()
         {
             #region Variable Declarations
-            WinCell uIМоревРусланЕвгеньевиCell = this.UIКвазарЖурналфлюорогрWindow.UIЖурналфлюорографичесWindow.UI_registryGridClient.UIResultTableTable.UIResultTableстрока7Row.UIМоревРусланЕвгеньевиCell;
-            WinRow uIResultTableстрока7Row = this.UIКвазарЖурналфлюорогрWindow.UIЖурналфлюорографичесWindow.UI_registryGridClient.UIResultTableTable.UIResultTableстрока7Row;
+            WinButton uIФлюорографияButton = this.UIКвазарЖурналфлюорогрWindow.UI_pluginContainerWindow.UIФлюорографияButton;
+            WinButton uIФлюорообследованиеButton = this.UIКвазарЖурналфлюорогрWindow.UIMedSoftFluorographyWindow.UIФлюорообследованиеButton;
+            WinButton uIItemButton = this.UIКвазарЖурналфлюорогрWindow.UIФлюорообследованиеWindow.UI_policyNumberWindow.UIItemButton;
+            WinCustom uIItemCustom = this.UIПоискфизическоголицаWindow.UI_lastNameWindow.UIItemCustom;
+            WinEdit uI_lastName_EmbeddableEdit = this.UIПоискфизическоголицаWindow.UI_lastName_EmbeddableWindow.UI_lastName_EmbeddableEdit;
+            WinCustom uIItemCustom1 = this.UIПоискфизическоголицаWindow.UI_firstNameWindow.UIItemCustom;
+            WinEdit uI_firstName_EmbeddablEdit = this.UIПоискфизическоголицаWindow.UI_firstName_EmbeddablWindow.UI_firstName_EmbeddablEdit;
+            WinCheckBox uIВбазеФОМСCheckBox1 = this.UIПоискфизическоголицаWindow.UIВбазеФОМСCheckBox.UIВбазеФОМСCheckBox1;
+            WinButton uIИскатьButton = this.UIПоискфизическоголицаWindow.UIИскатьWindow.UIИскатьButton;
+            WinCell uIМоревРусланЕвгеньевиCell = this.UIПоискфизическоголицаWindow.UIФизическиелицаTable.UIФизическиелицаrow1Row.UIМоревРусланЕвгеньевиCell;
+            WinButton uIПринятьButton = this.UIПоискфизическоголицаWindow.UIПринятьWindow.UIПринятьButton;
+            WinButton uIДАButton = this.UIКвазарWindow1.UIДАWindow.UIДАButton;
+            WinCustom uIItemCustom2 = this.UIКвазарЖурналфлюорогрWindow.UIФлюорообследованиеWindow.UINoteTextEditorWindow.UIItemCustom;
+            WinEdit uINoteTextEditor_EmbedEdit = this.UIКвазарЖурналфлюорогрWindow.UIФлюорообследованиеWindow.UINoteTextEditor_EmbedWindow.UINoteTextEditor_EmbedEdit;
+            WinButton uIПринятьButton1 = this.UIКвазарЖурналфлюорогрWindow.UIФлюорообследованиеWindow.UIПринятьWindow.UIПринятьButton;
+            WinButton uIФлюороографическоедоButton = this.UIКвазарЖурналфлюорогрWindow.UIMedSoftFluorographyWindow.UIФлюороографическоедоButton;
+            WinButton uIItemButton1 = this.UIКвазарЖурналфлюорогрWindow.UIФлюорографическоедооWindow.UI_policyNumberWindow.UIItemButton;
+            WinCustom uIItemCustom3 = this.UIКвазарЖурналфлюорогрWindow.UIФлюорографическоедооWindow.UINoteTextEditorWindow.UIItemCustom;
+            WinEdit uINoteTextEditor_EmbedEdit1 = this.UIКвазарЖурналфлюорогрWindow.UIФлюорографическоедооWindow.UINoteTextEditor_EmbedWindow.UINoteTextEditor_EmbedEdit;
+            WinButton uIПринятьButton2 = this.UIКвазарЖурналфлюорогрWindow.UIФлюорографическоедооWindow.UIПринятьWindow.UIПринятьButton;
             #endregion
 
-            // Убедитесь, что свойство Value "Морев Руслан Евгеньевич" ячейка равняется "Морев Руслан Евгеньевич"
-            Assert.AreEqual(this.AssertMethod1ExpectedValues.UIМоревРусланЕвгеньевиCellValue, uIМоревРусланЕвгеньевиCell.Value, "нет морячка");
+            // Щелкните "Флюорография" кнопка
+            Mouse.Click(uIФлюорографияButton, new Point(145, 16));
 
-            // Убедитесь, что свойство Name "ResultTable строка 7" строка равняется "ResultTable строка 7"
-            Assert.AreEqual(this.AssertMethod1ExpectedValues.UIResultTableстрока7RowName, uIResultTableстрока7Row.Name, "не все строки");
+            // Щелкните "Флюорообследование" кнопка
+            Mouse.Click(uIФлюорообследованиеButton, new Point(163, 29));
+
+            // Щелкните кнопка с номером 4 в "_policyNumber" окно
+            Mouse.Click(uIItemButton, new Point(22, 9));
+
+            // Щелкните пользовательский элемент управления
+            Mouse.Click(uIItemCustom, new Point(20, 8));
+
+            // Тип "Морев" в "_lastName_EmbeddableTextBox" надпись
+            uI_lastName_EmbeddableEdit.Text = this.CreatFlureParams.UI_lastName_EmbeddableEditText;
+
+            // Щелкните пользовательский элемент управления
+            Mouse.Click(uIItemCustom1, new Point(50, 14));
+
+            // Тип "рус" в "_firstName_EmbeddableTextBox" надпись
+            uI_firstName_EmbeddablEdit.Text = this.CreatFlureParams.UI_firstName_EmbeddablEditText;
+
+            // Щелкните "В базе ФОМС" флажок
+            Mouse.Click(uIВбазеФОМСCheckBox1, new Point(4, 11));
+
+            // Щелкните "Искать" кнопка
+            Mouse.Click(uIИскатьButton, new Point(37, 4));
+
+            // Установите флаг, чтобы разрешить продолжить воспроизведение в случае невыполнения необязательных действий. (Например, при сбое действия наведения указателя.)
+            Playback.PlaybackSettings.ContinueOnError = true;
+
+            // Щелкните "Морев Руслан Евгеньевич" ячейка
+            Mouse.Click(uIМоревРусланЕвгеньевиCell, new Point(164, 12));
+
+            // Перезагрузите флаг, чтобы убедиться, что в случае ошибки воспроизведение останавливается.
+            Playback.PlaybackSettings.ContinueOnError = false;
+
+            // Щелкните "Принять" кнопка
+            Mouse.Click(uIПринятьButton, new Point(43, 9));
+
+            // Щелкните "&Да" кнопка
+            Mouse.Click(uIДАButton, new Point(54, 14));
+
+            // Щелкните пользовательский элемент управления
+            Mouse.Click(uIItemCustom2, new Point(74, 10));
+
+            // Тип "Тестовый снимок" в "noteTextEditor_EmbeddableTextBox" надпись
+            uINoteTextEditor_EmbedEdit.Text = this.CreatFlureParams.UINoteTextEditor_EmbedEditText;
+
+            // Щелкните "Принять" кнопка
+            Mouse.Click(uIПринятьButton1, new Point(25, 7));
+
+            // Щелкните "Флюороографическое дообследование" кнопка
+            Mouse.Click(uIФлюороографическоедоButton, new Point(141, 12));
+
+            // Щелкните кнопка с номером 4 в "_policyNumber" окно
+            Mouse.Click(uIItemButton1, new Point(18, 8));
+
+            // Щелкните пользовательский элемент управления
+            Mouse.Click(uIItemCustom, new Point(35, 7));
+
+            // Установите флаг, чтобы разрешить продолжить воспроизведение в случае невыполнения необязательных действий. (Например, при сбое действия наведения указателя.)
+            Playback.PlaybackSettings.ContinueOnError = true;
+
+            // Тип "Морев" в "_lastName_EmbeddableTextBox" надпись
+            uI_lastName_EmbeddableEdit.Text = this.CreatFlureParams.UI_lastName_EmbeddableEditText1;
+
+            // Перезагрузите флаг, чтобы убедиться, что в случае ошибки воспроизведение останавливается.
+            Playback.PlaybackSettings.ContinueOnError = false;
+
+            // Щелкните пользовательский элемент управления
+            Mouse.Click(uIItemCustom1, new Point(41, 9));
+
+            // Тип "рус" в "_firstName_EmbeddableTextBox" надпись
+            uI_firstName_EmbeddablEdit.Text = this.CreatFlureParams.UI_firstName_EmbeddablEditText1;
+
+            // Щелкните "В базе ФОМС" флажок
+            Mouse.Click(uIВбазеФОМСCheckBox1, new Point(8, 8));
+
+            // Щелкните "Искать" кнопка
+            Mouse.Click(uIИскатьButton, new Point(92, 5));
+
+            // Установите флаг, чтобы разрешить продолжить воспроизведение в случае невыполнения необязательных действий. (Например, при сбое действия наведения указателя.)
+            Playback.PlaybackSettings.ContinueOnError = true;
+
+            // Щелкните "Морев Руслан Евгеньевич" ячейка
+            Mouse.Click(uIМоревРусланЕвгеньевиCell, new Point(115, 10));
+
+            // Щелкните "Принять" кнопка
+            Mouse.Click(uIПринятьButton, new Point(33, 11));
+
+            // Перезагрузите флаг, чтобы убедиться, что в случае ошибки воспроизведение останавливается.
+            Playback.PlaybackSettings.ContinueOnError = false;
+
+            // Щелкните "&Да" кнопка
+            Mouse.Click(uIДАButton, new Point(29, 12));
+
+            // Щелкните пользовательский элемент управления
+            Mouse.Click(uIItemCustom3, new Point(47, 13));
+
+            // Тип "Норма" в "noteTextEditor_EmbeddableTextBox" надпись
+            uINoteTextEditor_EmbedEdit1.Text = this.CreatFlureParams.UINoteTextEditor_EmbedEditText1;
+
+            // Щелкните "Принять" кнопка
+            Mouse.Click(uIПринятьButton2, new Point(59, 23));
         }
         
         #region Properties
-        public virtual AssertMethod1ExpectedValues AssertMethod1ExpectedValues
+        public virtual CreatFlureParams CreatFlureParams
         {
             get
             {
-                if ((this.mAssertMethod1ExpectedValues == null))
+                if ((this.mCreatFlureParams == null))
                 {
-                    this.mAssertMethod1ExpectedValues = new AssertMethod1ExpectedValues();
+                    this.mCreatFlureParams = new CreatFlureParams();
                 }
-                return this.mAssertMethod1ExpectedValues;
+                return this.mCreatFlureParams;
             }
         }
         
@@ -82,34 +199,82 @@ namespace CodedUITestProject12
                 return this.mUIItemWindow;
             }
         }
+        
+        public UIПоискфизическоголицаWindow UIПоискфизическоголицаWindow
+        {
+            get
+            {
+                if ((this.mUIПоискфизическоголицаWindow == null))
+                {
+                    this.mUIПоискфизическоголицаWindow = new UIПоискфизическоголицаWindow();
+                }
+                return this.mUIПоискфизическоголицаWindow;
+            }
+        }
+        
+        public UIКвазарWindow1 UIКвазарWindow1
+        {
+            get
+            {
+                if ((this.mUIКвазарWindow1 == null))
+                {
+                    this.mUIКвазарWindow1 = new UIКвазарWindow1();
+                }
+                return this.mUIКвазарWindow1;
+            }
+        }
         #endregion
         
         #region Fields
-        private AssertMethod1ExpectedValues mAssertMethod1ExpectedValues;
+        private CreatFlureParams mCreatFlureParams;
         
         private UIКвазарЖурналфлюорогрWindow mUIКвазарЖурналфлюорогрWindow;
         
         private UIItemWindow mUIItemWindow;
+        
+        private UIПоискфизическоголицаWindow mUIПоискфизическоголицаWindow;
+        
+        private UIКвазарWindow1 mUIКвазарWindow1;
         #endregion
     }
     
     /// <summary>
-    /// Параметры для передачи в "AssertMethod1"
+    /// Параметры для передачи в "CreatFlure"
     /// </summary>
     [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
-    public class AssertMethod1ExpectedValues
+    public class CreatFlureParams
     {
         
         #region Fields
         /// <summary>
-        /// Убедитесь, что свойство Value "Морев Руслан Евгеньевич" ячейка равняется "Морев Руслан Евгеньевич"
+        /// Тип "Морев" в "_lastName_EmbeddableTextBox" надпись
         /// </summary>
-        public string UIМоревРусланЕвгеньевиCellValue = "Морев Руслан Евгеньевич";
+        public string UI_lastName_EmbeddableEditText = "Морев";
         
         /// <summary>
-        /// Убедитесь, что свойство Name "ResultTable строка 7" строка равняется "ResultTable строка 7"
+        /// Тип "рус" в "_firstName_EmbeddableTextBox" надпись
         /// </summary>
-        public string UIResultTableстрока7RowName = "ResultTable строка 7";
+        public string UI_firstName_EmbeddablEditText = "рус";
+        
+        /// <summary>
+        /// Тип "Тестовый снимок" в "noteTextEditor_EmbeddableTextBox" надпись
+        /// </summary>
+        public string UINoteTextEditor_EmbedEditText = "Тестовый снимок";
+        
+        /// <summary>
+        /// Тип "Морев" в "_lastName_EmbeddableTextBox" надпись
+        /// </summary>
+        public string UI_lastName_EmbeddableEditText1 = "Морев";
+        
+        /// <summary>
+        /// Тип "рус" в "_firstName_EmbeddableTextBox" надпись
+        /// </summary>
+        public string UI_firstName_EmbeddablEditText1 = "рус";
+        
+        /// <summary>
+        /// Тип "Норма" в "noteTextEditor_EmbeddableTextBox" надпись
+        /// </summary>
+        public string UINoteTextEditor_EmbedEditText1 = "Норма";
         #endregion
     }
     
@@ -124,6 +289,8 @@ namespace CodedUITestProject12
             this.SearchProperties.Add(new PropertyExpression(WinWindow.PropertyNames.ClassName, "WindowsForms10.Window", PropertyExpressionOperator.Contains));
             this.WindowTitles.Add("Квазар - Журнал флюорографических обследований");
             this.WindowTitles.Add("Квазар");
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            this.WindowTitles.Add("Квазар - Флюорографическое дообследование");
             #endregion
         }
         
@@ -163,6 +330,42 @@ namespace CodedUITestProject12
                 return this.mUIMedSoftRegistriesWindow;
             }
         }
+        
+        public UIMedSoftFluorographyWindow UIMedSoftFluorographyWindow
+        {
+            get
+            {
+                if ((this.mUIMedSoftFluorographyWindow == null))
+                {
+                    this.mUIMedSoftFluorographyWindow = new UIMedSoftFluorographyWindow(this);
+                }
+                return this.mUIMedSoftFluorographyWindow;
+            }
+        }
+        
+        public UIФлюорообследованиеWindow UIФлюорообследованиеWindow
+        {
+            get
+            {
+                if ((this.mUIФлюорообследованиеWindow == null))
+                {
+                    this.mUIФлюорообследованиеWindow = new UIФлюорообследованиеWindow(this);
+                }
+                return this.mUIФлюорообследованиеWindow;
+            }
+        }
+        
+        public UIФлюорографическоедооWindow UIФлюорографическоедооWindow
+        {
+            get
+            {
+                if ((this.mUIФлюорографическоедооWindow == null))
+                {
+                    this.mUIФлюорографическоедооWindow = new UIФлюорографическоедооWindow(this);
+                }
+                return this.mUIФлюорографическоедооWindow;
+            }
+        }
         #endregion
         
         #region Fields
@@ -171,6 +374,12 @@ namespace CodedUITestProject12
         private UI_pluginContainerWindow mUI_pluginContainerWindow;
         
         private UIMedSoftRegistriesWindow mUIMedSoftRegistriesWindow;
+        
+        private UIMedSoftFluorographyWindow mUIMedSoftFluorographyWindow;
+        
+        private UIФлюорообследованиеWindow mUIФлюорообследованиеWindow;
+        
+        private UIФлюорографическоедооWindow mUIФлюорографическоедооWindow;
         #endregion
     }
     
@@ -849,6 +1058,22 @@ namespace CodedUITestProject12
                 return this.mUIСистемаправButton;
             }
         }
+        
+        public WinButton UIФлюорографияButton
+        {
+            get
+            {
+                if ((this.mUIФлюорографияButton == null))
+                {
+                    this.mUIФлюорографияButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIФлюорографияButton.SearchProperties[WinButton.PropertyNames.Name] = "Флюорография";
+                    this.mUIФлюорографияButton.WindowTitles.Add("Квазар");
+                    #endregion
+                }
+                return this.mUIФлюорографияButton;
+            }
+        }
         #endregion
         
         #region Fields
@@ -857,6 +1082,8 @@ namespace CodedUITestProject12
         private WinButton mUISplitterBarButton;
         
         private WinButton mUIСистемаправButton;
+        
+        private WinButton mUIФлюорографияButton;
         #endregion
     }
     
@@ -893,6 +1120,493 @@ namespace CodedUITestProject12
         
         #region Fields
         private WinButton mUIОбследованияButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIMedSoftFluorographyWindow : WinWindow
+    {
+        
+        public UIMedSoftFluorographyWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "MedSoft.Fluorography";
+            this.WindowTitles.Add("Квазар");
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIФлюорообследованиеButton
+        {
+            get
+            {
+                if ((this.mUIФлюорообследованиеButton == null))
+                {
+                    this.mUIФлюорообследованиеButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIФлюорообследованиеButton.SearchProperties[WinButton.PropertyNames.Name] = "Флюорообследование";
+                    this.mUIФлюорообследованиеButton.WindowTitles.Add("Квазар");
+                    #endregion
+                }
+                return this.mUIФлюорообследованиеButton;
+            }
+        }
+        
+        public WinButton UIФлюороографическоедоButton
+        {
+            get
+            {
+                if ((this.mUIФлюороографическоедоButton == null))
+                {
+                    this.mUIФлюороографическоедоButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIФлюороографическоедоButton.SearchProperties[WinButton.PropertyNames.Name] = "Флюороографическое дообследование";
+                    this.mUIФлюороографическоедоButton.WindowTitles.Add("Квазар - Флюорообследование");
+                    #endregion
+                }
+                return this.mUIФлюороографическоедоButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIФлюорообследованиеButton;
+        
+        private WinButton mUIФлюороографическоедоButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIФлюорообследованиеWindow : WinWindow
+    {
+        
+        public UIФлюорообследованиеWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "InspectionConduct";
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public UI_policyNumberWindow UI_policyNumberWindow
+        {
+            get
+            {
+                if ((this.mUI_policyNumberWindow == null))
+                {
+                    this.mUI_policyNumberWindow = new UI_policyNumberWindow(this);
+                }
+                return this.mUI_policyNumberWindow;
+            }
+        }
+        
+        public UINoteTextEditorWindow UINoteTextEditorWindow
+        {
+            get
+            {
+                if ((this.mUINoteTextEditorWindow == null))
+                {
+                    this.mUINoteTextEditorWindow = new UINoteTextEditorWindow(this);
+                }
+                return this.mUINoteTextEditorWindow;
+            }
+        }
+        
+        public UINoteTextEditor_EmbedWindow UINoteTextEditor_EmbedWindow
+        {
+            get
+            {
+                if ((this.mUINoteTextEditor_EmbedWindow == null))
+                {
+                    this.mUINoteTextEditor_EmbedWindow = new UINoteTextEditor_EmbedWindow(this);
+                }
+                return this.mUINoteTextEditor_EmbedWindow;
+            }
+        }
+        
+        public UIПринятьWindow UIПринятьWindow
+        {
+            get
+            {
+                if ((this.mUIПринятьWindow == null))
+                {
+                    this.mUIПринятьWindow = new UIПринятьWindow(this);
+                }
+                return this.mUIПринятьWindow;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UI_policyNumberWindow mUI_policyNumberWindow;
+        
+        private UINoteTextEditorWindow mUINoteTextEditorWindow;
+        
+        private UINoteTextEditor_EmbedWindow mUINoteTextEditor_EmbedWindow;
+        
+        private UIПринятьWindow mUIПринятьWindow;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UI_policyNumberWindow : WinWindow
+    {
+        
+        public UI_policyNumberWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_policyNumber";
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIItemButton
+        {
+            get
+            {
+                if ((this.mUIItemButton == null))
+                {
+                    this.mUIItemButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIItemButton.SearchProperties[WinButton.PropertyNames.Instance] = "4";
+                    this.mUIItemButton.WindowTitles.Add("Квазар - Флюорообследование");
+                    #endregion
+                }
+                return this.mUIItemButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIItemButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UINoteTextEditorWindow : WinWindow
+    {
+        
+        public UINoteTextEditorWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "noteTextEditor";
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCustom UIItemCustom
+        {
+            get
+            {
+                if ((this.mUIItemCustom == null))
+                {
+                    this.mUIItemCustom = new WinCustom(this);
+                    #region Условия поиска
+                    this.mUIItemCustom.WindowTitles.Add("Квазар - Флюорообследование");
+                    #endregion
+                }
+                return this.mUIItemCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCustom mUIItemCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UINoteTextEditor_EmbedWindow : WinWindow
+    {
+        
+        public UINoteTextEditor_EmbedWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "noteTextEditor_EmbeddableTextBox";
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UINoteTextEditor_EmbedEdit
+        {
+            get
+            {
+                if ((this.mUINoteTextEditor_EmbedEdit == null))
+                {
+                    this.mUINoteTextEditor_EmbedEdit = new WinEdit(this);
+                    #region Условия поиска
+                    this.mUINoteTextEditor_EmbedEdit.WindowTitles.Add("Квазар - Флюорообследование");
+                    #endregion
+                }
+                return this.mUINoteTextEditor_EmbedEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUINoteTextEditor_EmbedEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIПринятьWindow : WinWindow
+    {
+        
+        public UIПринятьWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_accept";
+            this.WindowTitles.Add("Квазар - Флюорообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIПринятьButton
+        {
+            get
+            {
+                if ((this.mUIПринятьButton == null))
+                {
+                    this.mUIПринятьButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIПринятьButton.SearchProperties[WinButton.PropertyNames.Name] = "Принять";
+                    this.mUIПринятьButton.WindowTitles.Add("Квазар - Флюорообследование");
+                    #endregion
+                }
+                return this.mUIПринятьButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIПринятьButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIФлюорографическоедооWindow : WinWindow
+    {
+        
+        public UIФлюорографическоедооWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "ReInspectionConduct";
+            this.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public UI_policyNumberWindow1 UI_policyNumberWindow
+        {
+            get
+            {
+                if ((this.mUI_policyNumberWindow == null))
+                {
+                    this.mUI_policyNumberWindow = new UI_policyNumberWindow1(this);
+                }
+                return this.mUI_policyNumberWindow;
+            }
+        }
+        
+        public UINoteTextEditorWindow1 UINoteTextEditorWindow
+        {
+            get
+            {
+                if ((this.mUINoteTextEditorWindow == null))
+                {
+                    this.mUINoteTextEditorWindow = new UINoteTextEditorWindow1(this);
+                }
+                return this.mUINoteTextEditorWindow;
+            }
+        }
+        
+        public UINoteTextEditor_EmbedWindow1 UINoteTextEditor_EmbedWindow
+        {
+            get
+            {
+                if ((this.mUINoteTextEditor_EmbedWindow == null))
+                {
+                    this.mUINoteTextEditor_EmbedWindow = new UINoteTextEditor_EmbedWindow1(this);
+                }
+                return this.mUINoteTextEditor_EmbedWindow;
+            }
+        }
+        
+        public UIПринятьWindow1 UIПринятьWindow
+        {
+            get
+            {
+                if ((this.mUIПринятьWindow == null))
+                {
+                    this.mUIПринятьWindow = new UIПринятьWindow1(this);
+                }
+                return this.mUIПринятьWindow;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UI_policyNumberWindow1 mUI_policyNumberWindow;
+        
+        private UINoteTextEditorWindow1 mUINoteTextEditorWindow;
+        
+        private UINoteTextEditor_EmbedWindow1 mUINoteTextEditor_EmbedWindow;
+        
+        private UIПринятьWindow1 mUIПринятьWindow;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UI_policyNumberWindow1 : WinWindow
+    {
+        
+        public UI_policyNumberWindow1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_policyNumber";
+            this.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIItemButton
+        {
+            get
+            {
+                if ((this.mUIItemButton == null))
+                {
+                    this.mUIItemButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIItemButton.SearchProperties[WinButton.PropertyNames.Instance] = "4";
+                    this.mUIItemButton.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+                    #endregion
+                }
+                return this.mUIItemButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIItemButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UINoteTextEditorWindow1 : WinWindow
+    {
+        
+        public UINoteTextEditorWindow1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "noteTextEditor";
+            this.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCustom UIItemCustom
+        {
+            get
+            {
+                if ((this.mUIItemCustom == null))
+                {
+                    this.mUIItemCustom = new WinCustom(this);
+                    #region Условия поиска
+                    this.mUIItemCustom.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+                    #endregion
+                }
+                return this.mUIItemCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCustom mUIItemCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UINoteTextEditor_EmbedWindow1 : WinWindow
+    {
+        
+        public UINoteTextEditor_EmbedWindow1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "noteTextEditor_EmbeddableTextBox";
+            this.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UINoteTextEditor_EmbedEdit
+        {
+            get
+            {
+                if ((this.mUINoteTextEditor_EmbedEdit == null))
+                {
+                    this.mUINoteTextEditor_EmbedEdit = new WinEdit(this);
+                    #region Условия поиска
+                    this.mUINoteTextEditor_EmbedEdit.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+                    #endregion
+                }
+                return this.mUINoteTextEditor_EmbedEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUINoteTextEditor_EmbedEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIПринятьWindow1 : WinWindow
+    {
+        
+        public UIПринятьWindow1(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_accept";
+            this.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIПринятьButton
+        {
+            get
+            {
+                if ((this.mUIПринятьButton == null))
+                {
+                    this.mUIПринятьButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIПринятьButton.SearchProperties[WinButton.PropertyNames.Name] = "Принять";
+                    this.mUIПринятьButton.WindowTitles.Add("Квазар - Флюорографическое дообследование");
+                    #endregion
+                }
+                return this.mUIПринятьButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIПринятьButton;
         #endregion
     }
     
@@ -1157,6 +1871,529 @@ namespace CodedUITestProject12
         
         #region Fields
         private WinButton mUIВойтиButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIПоискфизическоголицаWindow : WinWindow
+    {
+        
+        public UIПоискфизическоголицаWindow()
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.Name] = "Поиск физического лица";
+            this.SearchProperties.Add(new PropertyExpression(WinWindow.PropertyNames.ClassName, "WindowsForms10.Window", PropertyExpressionOperator.Contains));
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public UI_lastNameWindow UI_lastNameWindow
+        {
+            get
+            {
+                if ((this.mUI_lastNameWindow == null))
+                {
+                    this.mUI_lastNameWindow = new UI_lastNameWindow(this);
+                }
+                return this.mUI_lastNameWindow;
+            }
+        }
+        
+        public UI_lastName_EmbeddableWindow UI_lastName_EmbeddableWindow
+        {
+            get
+            {
+                if ((this.mUI_lastName_EmbeddableWindow == null))
+                {
+                    this.mUI_lastName_EmbeddableWindow = new UI_lastName_EmbeddableWindow(this);
+                }
+                return this.mUI_lastName_EmbeddableWindow;
+            }
+        }
+        
+        public UI_firstNameWindow UI_firstNameWindow
+        {
+            get
+            {
+                if ((this.mUI_firstNameWindow == null))
+                {
+                    this.mUI_firstNameWindow = new UI_firstNameWindow(this);
+                }
+                return this.mUI_firstNameWindow;
+            }
+        }
+        
+        public UI_firstName_EmbeddablWindow UI_firstName_EmbeddablWindow
+        {
+            get
+            {
+                if ((this.mUI_firstName_EmbeddablWindow == null))
+                {
+                    this.mUI_firstName_EmbeddablWindow = new UI_firstName_EmbeddablWindow(this);
+                }
+                return this.mUI_firstName_EmbeddablWindow;
+            }
+        }
+        
+        public UIВбазеФОМСCheckBox UIВбазеФОМСCheckBox
+        {
+            get
+            {
+                if ((this.mUIВбазеФОМСCheckBox == null))
+                {
+                    this.mUIВбазеФОМСCheckBox = new UIВбазеФОМСCheckBox(this);
+                }
+                return this.mUIВбазеФОМСCheckBox;
+            }
+        }
+        
+        public UIИскатьWindow UIИскатьWindow
+        {
+            get
+            {
+                if ((this.mUIИскатьWindow == null))
+                {
+                    this.mUIИскатьWindow = new UIИскатьWindow(this);
+                }
+                return this.mUIИскатьWindow;
+            }
+        }
+        
+        public UIФизическиелицаTable UIФизическиелицаTable
+        {
+            get
+            {
+                if ((this.mUIФизическиелицаTable == null))
+                {
+                    this.mUIФизическиелицаTable = new UIФизическиелицаTable(this);
+                }
+                return this.mUIФизическиелицаTable;
+            }
+        }
+        
+        public UIПринятьWindow2 UIПринятьWindow
+        {
+            get
+            {
+                if ((this.mUIПринятьWindow == null))
+                {
+                    this.mUIПринятьWindow = new UIПринятьWindow2(this);
+                }
+                return this.mUIПринятьWindow;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UI_lastNameWindow mUI_lastNameWindow;
+        
+        private UI_lastName_EmbeddableWindow mUI_lastName_EmbeddableWindow;
+        
+        private UI_firstNameWindow mUI_firstNameWindow;
+        
+        private UI_firstName_EmbeddablWindow mUI_firstName_EmbeddablWindow;
+        
+        private UIВбазеФОМСCheckBox mUIВбазеФОМСCheckBox;
+        
+        private UIИскатьWindow mUIИскатьWindow;
+        
+        private UIФизическиелицаTable mUIФизическиелицаTable;
+        
+        private UIПринятьWindow2 mUIПринятьWindow;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UI_lastNameWindow : WinWindow
+    {
+        
+        public UI_lastNameWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_lastName";
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCustom UIItemCustom
+        {
+            get
+            {
+                if ((this.mUIItemCustom == null))
+                {
+                    this.mUIItemCustom = new WinCustom(this);
+                    #region Условия поиска
+                    this.mUIItemCustom.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUIItemCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCustom mUIItemCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UI_lastName_EmbeddableWindow : WinWindow
+    {
+        
+        public UI_lastName_EmbeddableWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties.Add(new PropertyExpression(WinWindow.PropertyNames.ControlName, "_lastName_EmbeddableTextBox", PropertyExpressionOperator.Contains));
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UI_lastName_EmbeddableEdit
+        {
+            get
+            {
+                if ((this.mUI_lastName_EmbeddableEdit == null))
+                {
+                    this.mUI_lastName_EmbeddableEdit = new WinEdit(this);
+                    #region Условия поиска
+                    this.mUI_lastName_EmbeddableEdit.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUI_lastName_EmbeddableEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUI_lastName_EmbeddableEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UI_firstNameWindow : WinWindow
+    {
+        
+        public UI_firstNameWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_firstName";
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCustom UIItemCustom
+        {
+            get
+            {
+                if ((this.mUIItemCustom == null))
+                {
+                    this.mUIItemCustom = new WinCustom(this);
+                    #region Условия поиска
+                    this.mUIItemCustom.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUIItemCustom;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCustom mUIItemCustom;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UI_firstName_EmbeddablWindow : WinWindow
+    {
+        
+        public UI_firstName_EmbeddablWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_firstName_EmbeddableTextBox";
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinEdit UI_firstName_EmbeddablEdit
+        {
+            get
+            {
+                if ((this.mUI_firstName_EmbeddablEdit == null))
+                {
+                    this.mUI_firstName_EmbeddablEdit = new WinEdit(this);
+                    #region Условия поиска
+                    this.mUI_firstName_EmbeddablEdit.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUI_firstName_EmbeddablEdit;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinEdit mUI_firstName_EmbeddablEdit;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIВбазеФОМСCheckBox : WinCheckBox
+    {
+        
+        public UIВбазеФОМСCheckBox(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinCheckBox.PropertyNames.Name] = "В базе ФОМС";
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCheckBox UIВбазеФОМСCheckBox1
+        {
+            get
+            {
+                if ((this.mUIВбазеФОМСCheckBox1 == null))
+                {
+                    this.mUIВбазеФОМСCheckBox1 = new WinCheckBox(this);
+                    #region Условия поиска
+                    this.mUIВбазеФОМСCheckBox1.SearchProperties[WinCheckBox.PropertyNames.Name] = "В базе ФОМС";
+                    this.mUIВбазеФОМСCheckBox1.SearchConfigurations.Add(SearchConfiguration.DisambiguateChild);
+                    this.mUIВбазеФОМСCheckBox1.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUIВбазеФОМСCheckBox1;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCheckBox mUIВбазеФОМСCheckBox1;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIИскатьWindow : WinWindow
+    {
+        
+        public UIИскатьWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_search";
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIИскатьButton
+        {
+            get
+            {
+                if ((this.mUIИскатьButton == null))
+                {
+                    this.mUIИскатьButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIИскатьButton.SearchProperties[WinButton.PropertyNames.Name] = "Искать";
+                    this.mUIИскатьButton.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUIИскатьButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIИскатьButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIФизическиелицаTable : WinTable
+    {
+        
+        public UIФизическиелицаTable(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties.Add(new PropertyExpression(WinTable.PropertyNames.Name, "Физические лица", PropertyExpressionOperator.Contains));
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.SearchConfigurations.Remove(SearchConfiguration.VisibleOnly);
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public UIФизическиелицаrow1Row UIФизическиелицаrow1Row
+        {
+            get
+            {
+                if ((this.mUIФизическиелицаrow1Row == null))
+                {
+                    this.mUIФизическиелицаrow1Row = new UIФизическиелицаrow1Row(this);
+                }
+                return this.mUIФизическиелицаrow1Row;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIФизическиелицаrow1Row mUIФизическиелицаrow1Row;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIФизическиелицаrow1Row : WinRow
+    {
+        
+        public UIФизическиелицаrow1Row(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinRow.PropertyNames.Name] = "Физические лица row 1";
+            this.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+            this.SearchConfigurations.Remove(SearchConfiguration.VisibleOnly);
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinCell UIМоревРусланЕвгеньевиCell
+        {
+            get
+            {
+                if ((this.mUIМоревРусланЕвгеньевиCell == null))
+                {
+                    this.mUIМоревРусланЕвгеньевиCell = new WinCell(this);
+                    #region Условия поиска
+                    this.mUIМоревРусланЕвгеньевиCell.SearchProperties[WinCell.PropertyNames.Value] = "Морев Руслан Евгеньевич";
+                    this.mUIМоревРусланЕвгеньевиCell.SearchConfigurations.Add(SearchConfiguration.AlwaysSearch);
+                    this.mUIМоревРусланЕвгеньевиCell.SearchConfigurations.Remove(SearchConfiguration.VisibleOnly);
+                    this.mUIМоревРусланЕвгеньевиCell.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUIМоревРусланЕвгеньевиCell;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinCell mUIМоревРусланЕвгеньевиCell;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIПринятьWindow2 : WinWindow
+    {
+        
+        public UIПринятьWindow2(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlName] = "_accept";
+            this.WindowTitles.Add("Поиск физического лица");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIПринятьButton
+        {
+            get
+            {
+                if ((this.mUIПринятьButton == null))
+                {
+                    this.mUIПринятьButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIПринятьButton.SearchProperties[WinButton.PropertyNames.Name] = "Принять";
+                    this.mUIПринятьButton.WindowTitles.Add("Поиск физического лица");
+                    #endregion
+                }
+                return this.mUIПринятьButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIПринятьButton;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIКвазарWindow1 : WinWindow
+    {
+        
+        public UIКвазарWindow1()
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.Name] = "Квазар";
+            this.SearchProperties[WinWindow.PropertyNames.ClassName] = "#32770";
+            this.WindowTitles.Add("Квазар");
+            #endregion
+        }
+        
+        #region Properties
+        public UIДАWindow UIДАWindow
+        {
+            get
+            {
+                if ((this.mUIДАWindow == null))
+                {
+                    this.mUIДАWindow = new UIДАWindow(this);
+                }
+                return this.mUIДАWindow;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private UIДАWindow mUIДАWindow;
+        #endregion
+    }
+    
+    [GeneratedCode("Построитель кодированных тестов ИП", "15.0.26208.0")]
+    public class UIДАWindow : WinWindow
+    {
+        
+        public UIДАWindow(UITestControl searchLimitContainer) : 
+                base(searchLimitContainer)
+        {
+            #region Условия поиска
+            this.SearchProperties[WinWindow.PropertyNames.ControlId] = "6";
+            this.WindowTitles.Add("Квазар");
+            #endregion
+        }
+        
+        #region Properties
+        public WinButton UIДАButton
+        {
+            get
+            {
+                if ((this.mUIДАButton == null))
+                {
+                    this.mUIДАButton = new WinButton(this);
+                    #region Условия поиска
+                    this.mUIДАButton.SearchProperties[WinButton.PropertyNames.Name] = "Да";
+                    this.mUIДАButton.WindowTitles.Add("Квазар");
+                    #endregion
+                }
+                return this.mUIДАButton;
+            }
+        }
+        #endregion
+        
+        #region Fields
+        private WinButton mUIДАButton;
         #endregion
     }
 }
