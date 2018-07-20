@@ -1,0 +1,6 @@
+c:\users\ivan\source\repos\CodedUITestProject12\CodedUITestProject12\bin\Debug\CodedUITestProject12.dll
+c:\users\ivan\source\repos\CodedUITestProject12\CodedUITestProject12\bin\Debug\CodedUITestProject12.pdb
+c:\users\ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\CodedUITestProject12.csprojAssemblyReference.cache
+c:\users\ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\CodedUITestProject12.csproj.CoreCompileInputs.cache
+c:\users\ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\CodedUITestProject12.dll
+c:\users\ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\CodedUITestProject12.pdb

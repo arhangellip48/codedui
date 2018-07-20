@@ -1,0 +1,6 @@
+C:\Users\Ivan\source\repos\CodedUITestProject12\CodedUITestProject12\bin\Debug\CodedUITestProject12.dll
+C:\Users\Ivan\source\repos\CodedUITestProject12\CodedUITestProject12\bin\Debug\CodedUITestProject12.pdb
+C:\Users\Ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\testFluregrafiJornal.csprojAssemblyReference.cache
+C:\Users\Ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\testFluregrafiJornal.csproj.CoreCompileInputs.cache
+C:\Users\Ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\CodedUITestProject12.dll
+C:\Users\Ivan\source\repos\CodedUITestProject12\CodedUITestProject12\obj\Debug\CodedUITestProject12.pdb
